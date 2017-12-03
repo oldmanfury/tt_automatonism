@@ -11,12 +11,11 @@ Once your patch is working (start with something simple like the example AutoExa
 
 To execute you put a line like this in your pdpd file
 
-
 sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt -midiindev 0,1 /home/pi/pdpatch/AUTOMATONISM_2.1/main.pd |& python /home/pi/pdpatch/AUTOMATONISM_2.1/tt-OLED.py
-
 
 tt-OLED.pd has a signal input for an audio-stream on the left.  This gets displayed in an oscilloscope mode.  The inlet on the right is used to toggle the display.  Make sure you check-that box, when you do you'll see the data-stream written to the command-line in pure-data.
 
+https://github.com/oldmanfury/tt_automatonism/blob/master/AutoExample.png
 
 
 
