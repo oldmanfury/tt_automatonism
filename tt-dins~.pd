@@ -1,0 +1,51 @@
+#N canvas 96 109 699 449 10;
+#X obj 95 59 tedium_input 4;
+#X obj 300 58 tedium_input 17;
+#X obj 95 247 tedium_input 14;
+#X obj 317 247 tedium_input 27;
+#X text 116 20 gate inputs 0-3;
+#X obj 151 94 s ttD1;
+#X obj 364 89 s ttD2;
+#X obj 162 275 s ttD3;
+#X obj 381 272 s ttD4;
+#X obj 94 166 outlet~;
+#X obj 298 166 outlet~;
+#X obj 96 349 outlet~;
+#X obj 315 345 outlet~;
+#X obj 11 32 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 34 32 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 57 32 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 79 32 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 94 142 vline~;
+#X msg 94 118 1 10 \, 0 10 10;
+#X obj 300 133 vline~;
+#X msg 300 109 1 10 \, 0 10 10;
+#X obj 96 326 vline~;
+#X msg 96 302 1 10 \, 0 10 10;
+#X obj 315 319 vline~;
+#X msg 315 295 1 10 \, 0 10 10;
+#X connect 0 0 5 0;
+#X connect 0 0 18 0;
+#X connect 1 0 6 0;
+#X connect 1 0 20 0;
+#X connect 2 0 7 0;
+#X connect 2 0 22 0;
+#X connect 3 0 8 0;
+#X connect 3 0 24 0;
+#X connect 13 0 18 0;
+#X connect 14 0 22 0;
+#X connect 15 0 20 0;
+#X connect 16 0 24 0;
+#X connect 17 0 9 0;
+#X connect 18 0 17 0;
+#X connect 19 0 10 0;
+#X connect 20 0 19 0;
+#X connect 21 0 11 0;
+#X connect 22 0 21 0;
+#X connect 23 0 12 0;
+#X connect 24 0 23 0;
+#X coords 0 -1 1 1 85 40 1 10 10;
