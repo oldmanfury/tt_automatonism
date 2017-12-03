@@ -96,8 +96,8 @@ font = ImageFont.load_default()
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 # font = ImageFont.truetype('Minecraftia.ttf', 8)
-font2 = ImageFont.truetype("/usr/share/fonts/truetype/roboto/Roboto-Bold.ttf",14)
-font3 = ImageFont.truetype("/usr/share/fonts/truetype/roboto/Roboto-Bold.ttf",28)
+#font2 = ImageFont.truetype("/usr/share/fonts/truetype/roboto/Roboto-Bold.ttf",14)
+#font3 = ImageFont.truetype("/usr/share/fonts/truetype/roboto/Roboto-Bold.ttf",28)
 
 while True:
     then = time.time()
@@ -115,13 +115,13 @@ while True:
     if (TT[0:8] == "print: 1"):
         line1 = TT[8: ]
         draw.rectangle((0,0,width,height), outline=0, fill=255)
-        draw.text((x, top+8),    str(line1),  font=font2, fill=0)
+        draw.text((x, top+8),    str(line1),  font=font, fill=0)
 	disp.image(image)
         disp.display()
     elif (TT[0:8] == "print: 2"):
         line2 = TT[8: ]
         draw.rectangle((0,0,width,height), outline=0, fill=255)
-        draw.text((x, top+1),    str(line2),  font=font3, fill=0)
+        draw.text((x, top+1),    str(line2),  font=font, fill=0)
 #        time.sleep(2)
 	disp.image(image)
         disp.display()
