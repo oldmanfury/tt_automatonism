@@ -1,0 +1,292 @@
+#N canvas 0 50 1440 857 10;
+#X obj 661 21 loadbang;
+#X obj 662 52 delay 300;
+#X msg 662 90 1;
+#X msg 620 117 open;
+#X obj 664 160 terminal_tedium_adc;
+#X text 706 138 adc 0-5;
+#N canvas 716 264 450 300 removenoise 0;
+#X obj 99 26 inlet;
+#X obj 288 94 f;
+#X obj 99 173 i;
+#X obj 99 199 change;
+#X text 315 125 smooth and remove noise;
+#X obj 99 228 outlet;
+#X obj 99 53 t f b;
+#X obj 99 123 expr ($f1*(($f2*-1)+1))+($f3*$f2);
+#X obj 60 96 sel 0;
+#X obj 60 144 0;
+#X msg 202 88 0.3;
+#X connect 0 0 6 0;
+#X connect 1 0 7 2;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 6 0 8 0;
+#X connect 6 1 10 0;
+#X connect 7 0 1 0;
+#X connect 7 0 2 0;
+#X connect 8 0 9 0;
+#X connect 8 1 7 0;
+#X connect 9 0 1 0;
+#X connect 9 0 10 0;
+#X connect 9 0 7 0;
+#X connect 10 0 7 1;
+#X restore 319 220 pd removenoise;
+#N canvas 0 50 450 300 removenoise 0;
+#X obj 99 26 inlet;
+#X obj 288 94 f;
+#X obj 99 173 i;
+#X obj 99 199 change;
+#X text 315 125 smooth and remove noise;
+#X obj 99 228 outlet;
+#X obj 99 53 t f b;
+#X obj 99 123 expr ($f1*(($f2*-1)+1))+($f3*$f2);
+#X obj 60 96 sel 0;
+#X obj 60 144 0;
+#X msg 202 88 0.3;
+#X connect 0 0 6 0;
+#X connect 1 0 7 2;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 6 0 8 0;
+#X connect 6 1 10 0;
+#X connect 7 0 1 0;
+#X connect 7 0 2 0;
+#X connect 8 0 9 0;
+#X connect 8 1 7 0;
+#X connect 9 0 1 0;
+#X connect 9 0 10 0;
+#X connect 9 0 7 0;
+#X connect 10 0 7 1;
+#X restore 499 220 pd removenoise;
+#N canvas 0 50 450 300 removenoise 0;
+#X obj 99 26 inlet;
+#X obj 288 94 f;
+#X obj 99 173 i;
+#X obj 99 199 change;
+#X text 315 125 smooth and remove noise;
+#X obj 99 228 outlet;
+#X obj 99 53 t f b;
+#X obj 99 123 expr ($f1*(($f2*-1)+1))+($f3*$f2);
+#X obj 60 96 sel 0;
+#X obj 60 144 0;
+#X msg 202 88 0.3;
+#X connect 0 0 6 0;
+#X connect 1 0 7 2;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 6 0 8 0;
+#X connect 6 1 10 0;
+#X connect 7 0 1 0;
+#X connect 7 0 2 0;
+#X connect 8 0 9 0;
+#X connect 8 1 7 0;
+#X connect 9 0 1 0;
+#X connect 9 0 10 0;
+#X connect 9 0 7 0;
+#X connect 10 0 7 1;
+#X restore 654 221 pd removenoise;
+#N canvas 0 50 450 300 removenoise 0;
+#X obj 99 26 inlet;
+#X obj 288 94 f;
+#X obj 99 173 i;
+#X obj 99 199 change;
+#X text 315 125 smooth and remove noise;
+#X obj 99 228 outlet;
+#X obj 99 53 t f b;
+#X obj 99 123 expr ($f1*(($f2*-1)+1))+($f3*$f2);
+#X obj 60 96 sel 0;
+#X obj 60 144 0;
+#X msg 202 88 0.3;
+#X connect 0 0 6 0;
+#X connect 1 0 7 2;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 6 0 8 0;
+#X connect 6 1 10 0;
+#X connect 7 0 1 0;
+#X connect 7 0 2 0;
+#X connect 8 0 9 0;
+#X connect 8 1 7 0;
+#X connect 9 0 1 0;
+#X connect 9 0 10 0;
+#X connect 9 0 7 0;
+#X connect 10 0 7 1;
+#X restore 844 219 pd removenoise;
+#N canvas 0 50 450 300 removenoise 0;
+#X obj 99 26 inlet;
+#X obj 288 94 f;
+#X obj 99 173 i;
+#X obj 99 199 change;
+#X text 315 125 smooth and remove noise;
+#X obj 99 228 outlet;
+#X obj 99 53 t f b;
+#X obj 99 123 expr ($f1*(($f2*-1)+1))+($f3*$f2);
+#X obj 60 96 sel 0;
+#X obj 60 144 0;
+#X msg 202 88 0.3;
+#X connect 0 0 6 0;
+#X connect 1 0 7 2;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 6 0 8 0;
+#X connect 6 1 10 0;
+#X connect 7 0 1 0;
+#X connect 7 0 2 0;
+#X connect 8 0 9 0;
+#X connect 8 1 7 0;
+#X connect 9 0 1 0;
+#X connect 9 0 10 0;
+#X connect 9 0 7 0;
+#X connect 10 0 7 1;
+#X restore 1070 224 pd removenoise;
+#N canvas 0 50 450 300 removenoise 0;
+#X obj 99 26 inlet;
+#X obj 288 94 f;
+#X obj 99 173 i;
+#X obj 99 199 change;
+#X text 315 125 smooth and remove noise;
+#X obj 99 228 outlet;
+#X obj 99 53 t f b;
+#X obj 99 123 expr ($f1*(($f2*-1)+1))+($f3*$f2);
+#X obj 60 96 sel 0;
+#X obj 60 144 0;
+#X msg 202 88 0.3;
+#X connect 0 0 6 0;
+#X connect 1 0 7 2;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 6 0 8 0;
+#X connect 6 1 10 0;
+#X connect 7 0 1 0;
+#X connect 7 0 2 0;
+#X connect 8 0 9 0;
+#X connect 8 1 7 0;
+#X connect 9 0 1 0;
+#X connect 9 0 10 0;
+#X connect 9 0 7 0;
+#X connect 10 0 7 1;
+#X restore 1218 220 pd removenoise;
+#X msg 756 111 deadband 2;
+#X obj 663 118 metro 10;
+#X msg 795 131 smooth 4;
+#X obj 15 119 sig~;
+#X obj 15 163 outlet~;
+#X obj 38 197 sig~;
+#X obj 38 241 outlet~;
+#X obj 57 270 sig~;
+#X obj 57 314 outlet~;
+#X obj 81 120 sig~;
+#X obj 81 164 outlet~;
+#X obj 102 200 sig~;
+#X obj 102 244 outlet~;
+#X obj 127 269 sig~;
+#X obj 127 313 outlet~;
+#X obj 174 506 s ttk1;
+#X obj 443 369 s ttk2;
+#X obj 844 374 s ttk4;
+#X obj 646 374 s ttk3;
+#X obj 1046 373 s ttk5;
+#X obj 1238 380 s ttk6;
+#X obj 12 33 vsl 15 60 0 1 0 0 ttk1 empty empty 0 -9 0 10 -262144 -1
+-1 0 1;
+#X obj 35 33 vsl 15 60 0 1 0 0 ttk2 empty empty 0 -9 0 10 -262144 -1
+-1 0 1;
+#X obj 57 33 vsl 15 60 0 1 0 0 ttk3 empty empty 0 -9 0 10 -262144 -1
+-1 0 1;
+#X obj 80 33 vsl 15 60 0 1 0 0 ttk4 empty empty 0 -9 0 10 -262144 -1
+-1 0 1;
+#X obj 101 33 vsl 15 60 0 1 0 0 ttk5 empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 123 33 vsl 15 60 0 1 0 0 ttk7 empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 175 371 clip 0 3998;
+#X obj 175 435 expr (($f1 / 3998) * 0.9226);
+#X obj 442 275 clip 0 3998;
+#X obj 443 325 expr (($f1 / 3998) * 0.9226);
+#X obj 645 274 clip 0 3998;
+#X obj 646 324 expr (($f1 / 3998) * 0.9226);
+#X obj 843 273 clip 0 3998;
+#X obj 844 323 expr (($f1 / 3998) * 0.9226);
+#X obj 1045 276 clip 0 3998;
+#X obj 1046 326 expr (($f1 / 3998) * 0.9226);
+#X obj 1237 276 clip 0 3998;
+#X obj 1238 326 expr (($f1 / 3998) * 0.9226);
+#X text 180 389 This defines the range on your CV jack as well as knob.
+See note 1 below.;
+#X text 181 454 This maps the CV and knob to 1v/o across your keyboard.
+I was able to get 5 or 6 usable octaves out of it. See Note 2 below
+for calibration ideas;
+#X text 174 526 This creates the outlet on the main Automatonism screen
+that sends CV into your oscillator.;
+#X text 563 575 Note 2: Calibration - Because the pots are analog \,
+you may see variance in ranges \, so if you feel you need to calibrate
+\, (just like you would an oscillator) start by pluggin in your sequencer
+or keyboard CV out to CV in 1 on the TT. Play C0 on your keyboard and
+then tune the osc (knob 1) on your TT to C0. Then hit C1 and see how
+far it is off \, and is it higher or lower in pitch. If it's just a
+tiny bit higher in pitch \, you will want to adjust the second 2 in
+the 0.9226 above. Try 0.9216 and then see if it gets closer. Essentially
+you will need to shrink the number to tune slightly down and increase
+the number to tune slightly up. Start with the smallest possible number
+shifts if you can until you atart seeing progress. If nothing \, try
+adjusting the 1st 2 Essentially \, the further the number to the left
+\, the larger tuning shifts you will be making.;
+#X text 172 582 Note 1: TT documentation (https://github.com/mxmxmx/terminal_tedium/wiki/ADC/)
+says that when you run the adc_test.pd you should have a range of 0-4095
+on your ADC pots and jacks. When I ran mine \, I discovered that I'm
+still in the world of analog \, (which makes total sense) so MY range
+was 0-3999 and it flickered between that and 3998 \, so by clipping
+the range to my lowest of the two numbers \, I fixed the numbers used
+for the math.;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 1 0 2 0;
+#X connect 2 0 13 0;
+#X connect 3 0 4 0;
+#X connect 4 0 6 0;
+#X connect 4 1 7 0;
+#X connect 4 2 8 0;
+#X connect 4 3 9 0;
+#X connect 4 4 10 0;
+#X connect 4 5 11 0;
+#X connect 6 0 39 0;
+#X connect 7 0 41 0;
+#X connect 8 0 43 0;
+#X connect 9 0 45 0;
+#X connect 10 0 47 0;
+#X connect 11 0 49 0;
+#X connect 12 0 4 0;
+#X connect 13 0 4 0;
+#X connect 14 0 4 0;
+#X connect 15 0 16 0;
+#X connect 17 0 18 0;
+#X connect 19 0 20 0;
+#X connect 21 0 22 0;
+#X connect 23 0 24 0;
+#X connect 25 0 26 0;
+#X connect 33 0 15 0;
+#X connect 34 0 17 0;
+#X connect 35 0 19 0;
+#X connect 36 0 21 0;
+#X connect 37 0 23 0;
+#X connect 38 0 25 0;
+#X connect 39 0 40 0;
+#X connect 40 0 27 0;
+#X connect 40 0 33 0;
+#X connect 41 0 42 0;
+#X connect 42 0 34 0;
+#X connect 42 0 28 0;
+#X connect 43 0 44 0;
+#X connect 44 0 35 0;
+#X connect 44 0 30 0;
+#X connect 45 0 46 0;
+#X connect 46 0 29 0;
+#X connect 46 0 36 0;
+#X connect 47 0 48 0;
+#X connect 48 0 31 0;
+#X connect 48 0 37 0;
+#X connect 49 0 50 0;
+#X connect 50 0 32 0;
+#X connect 50 0 38 0;
+#X coords 0 -1 1 1 130 90 1 10 10;
