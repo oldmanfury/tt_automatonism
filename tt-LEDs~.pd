@@ -1,21 +1,21 @@
-#N canvas 969 311 782 552 10;
-#X obj 311 358 tedium_output 12;
+#N canvas 533 124 782 552 10;
+#X obj 246 288 tedium_output 12;
 #X obj 10 270 tedium_output 16;
-#X text 185 14 switchLED;
-#X obj 111 101 tedium_output 26;
-#X obj 115 14 inlet~;
+#X text 461 29 switchLED;
+#X obj 380 135 tedium_output 26;
+#X obj 386 27 inlet~;
 #X obj 27 186 inlet~;
-#X obj 329 248 inlet~;
+#X obj 264 172 inlet~;
 #X text 144 191 top LED;
-#X text 419 262 bottom LED;
-#X obj 114 40 threshold~ 0.99 0 0.99 0;
+#X text 341 178 bottom LED;
+#X obj 383 74 threshold~ 0.99 0 0.99 0;
 #X obj 26 212 threshold~ 0.99 0 0.99 0;
-#X obj 329 278 threshold~ 0.99 0 0.99 0;
-#X obj 69 27 bng 15 100 50 0 empty empty empty 17 7 0 10 -262144 -4034
+#X obj 264 208 threshold~ 0.99 0 0.99 0;
+#X obj 62 26 bng 15 100 50 0 empty empty empty 17 7 0 10 -258113 -4034
 -1;
-#X obj 41 27 bng 15 100 50 0 empty empty empty 17 7 0 10 -262144 -258113
+#X obj 104 26 bng 15 100 50 0 empty empty empty 17 7 0 10 -4034 -258113
 -1;
-#X obj 10 27 bng 15 100 50 0 empty empty empty 17 7 0 10 -262144 -258113
+#X obj 17 26 bng 15 100 50 0 empty empty empty 17 7 0 10 -258113 -258113
 -1;
 #N canvas 0 50 450 300 ledpulse 0;
 #X obj 94 50 inlet;
@@ -36,7 +36,7 @@
 #X connect 5 0 6 0;
 #X connect 5 0 1 0;
 #X connect 7 0 4 0;
-#X restore 119 70 pd ledpulse;
+#X restore 388 104 pd ledpulse;
 #N canvas 0 50 450 300 ledpulse 0;
 #X obj 94 50 inlet;
 #X obj 96 213 outlet;
@@ -56,7 +56,7 @@
 #X connect 5 0 6 0;
 #X connect 5 0 1 0;
 #X connect 7 0 4 0;
-#X restore 349 301 pd ledpulse;
+#X restore 284 231 pd ledpulse;
 #N canvas 0 50 450 300 ledpulse 0;
 #X obj 94 50 inlet;
 #X obj 96 213 outlet;
@@ -77,16 +77,18 @@
 #X connect 5 0 1 0;
 #X connect 7 0 4 0;
 #X restore 42 236 pd ledpulse;
+#X text 17 41 D1 Out, f 4;
+#X text 63 41 D2 Out, f 4;
 #X connect 4 0 9 0;
 #X connect 5 0 10 0;
 #X connect 6 0 11 0;
-#X connect 9 0 12 0;
 #X connect 9 0 15 0;
+#X connect 9 0 13 0;
 #X connect 10 0 14 0;
 #X connect 10 0 17 0;
-#X connect 11 0 13 0;
 #X connect 11 0 16 0;
+#X connect 11 0 12 0;
 #X connect 15 0 3 0;
 #X connect 16 0 0 0;
 #X connect 17 0 1 0;
-#X coords 0 -1 1 1 75 35 1 10 10;
+#X coords 0 -1 1 1 115 65 1 10 10;
