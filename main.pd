@@ -5472,14 +5472,6 @@ Tedium INPUTS are above this line ----------------------------------------------
 Tedium OUTPUTS are below this line ----------------------------------------------------------------------------------->
 , f 221;
 #X text 198 88 <--Audio inputs;
-#X text 880 332 Disclaimer: This pen was stolen from https://github.com/oldmanfury
-\, https://github.com/joebauer and https://www.automatonism.com/ I
-just mangled some code from the geniuses and claim no wonership over
-thier work. NEXT STEPS - If this works for everyone I will pass along
-to the creator of Automatonism to see if we can get a TT object added
-to the next official release of Automatonism just like the Organelle.
-(I've been tlaking with him already and he seems interested), f 83
-;
 #X text 450 27 <--- Open this to see the math behind 1 volt per octave
 CV Sliders represent knobs 1 through 6 from left to right., f 25;
 #X text 1059 35 <-- These are your 4 TT Gate Inputs, f 14;
@@ -5500,6 +5492,10 @@ you will get gates coming out with visual feedback from your LED's
 #X text 783 28 <--- This is Gerald Stevens' original object. Hang on
 to it as it is really good for any CV that doesn't need to be 1v/o
 , f 24;
+#X text 852 331 Disclaimer: This pen was stolen from https://github.com/oldmanfury
+\, https://github.com/joebauer and https://www.automatonism.com/ I
+just mangled some code from the geniuses and claim no ownership over
+thier work., f 83;
 #X connect 12 0 9 0;
 #X connect 12 0 9 1;
 #X connect 12 0 11 0;
