@@ -96,8 +96,23 @@ font = ImageFont.load_default()
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 # font = ImageFont.truetype('Minecraftia.ttf', 8)
-#font2 = ImageFont.truetype("/usr/share/fonts/truetype/roboto/Roboto-Bold.ttf",14)
-#font3 = ImageFont.truetype("/usr/share/fonts/truetype/roboto/Roboto-Bold.ttf",28)
+font2 = ImageFont.truetype("/usr/share/fonts/VERDANA.TTF",14)
+font3 = ImageFont.truetype("/usr/share/fonts/VERDANA.TTF",14)
+font4 = ImageFont.truetype("/usr/share/fonts/VERDANA.TTF",18)
+
+
+# ################################### Patch Identifier ########################################
+draw.rectangle((0,0,width,height), outline=0, fill=255)
+draw.text((x, top+1)," Atomatonism",  font=font3, fill=0)
+draw.text((x, top+14)," 1V/O TEST",  font=font4, fill=0)
+disp.image(image)
+disp.display()
+
+time.sleep(15)
+
+# ################################################################################################
+
+
 
 while True:
     then = time.time()

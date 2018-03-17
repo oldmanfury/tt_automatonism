@@ -1,51 +1,55 @@
-#N canvas 96 109 699 449 10;
-#X obj 95 59 tedium_input 4;
-#X obj 300 58 tedium_input 17;
-#X obj 95 247 tedium_input 14;
-#X obj 317 247 tedium_input 27;
+#N canvas 679 293 699 449 10;
+#X obj 16 102 tedium_input 4;
+#X obj 174 95 tedium_input 17;
+#X obj 376 73 tedium_input 14;
+#X obj 515 74 tedium_input 27;
 #X text 116 20 gate inputs 0-3;
-#X obj 151 94 s ttD1;
-#X obj 364 89 s ttD2;
-#X obj 162 275 s ttD3;
-#X obj 381 272 s ttD4;
-#X obj 94 166 outlet~;
-#X obj 298 166 outlet~;
-#X obj 96 349 outlet~;
-#X obj 315 345 outlet~;
-#X obj 11 32 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 72 137 s ttD1;
+#X obj 579 99 s ttD4;
+#X obj 17 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 34 32 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 44 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 57 32 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 72 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 79 32 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 98 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 94 142 vline~;
-#X msg 94 118 1 10 \, 0 10 10;
-#X obj 300 133 vline~;
-#X msg 300 109 1 10 \, 0 10 10;
-#X obj 96 326 vline~;
-#X msg 96 302 1 10 \, 0 10 10;
-#X obj 315 319 vline~;
-#X msg 315 295 1 10 \, 0 10 10;
+#X obj 15 185 vline~;
+#X msg 15 161 1 10 \, 0 10 10;
+#X obj 174 170 vline~;
+#X msg 174 146 1 10 \, 0 10 10;
+#X obj 376 156 vline~;
+#X msg 376 132 1 10 \, 0 10 10;
+#X obj 513 146 vline~;
+#X msg 513 122 1 10 \, 0 10 10;
+#X obj 28 253 outlet~;
+#X obj 368 214 outlet~;
+#X obj 169 265 outlet~;
+#X obj 551 252 outlet~;
+#X obj 238 126 s ttD2;
+#X obj 442 105 s ttD3;
+#X text 16 49 D1;
+#X text 42 49 D2;
+#X text 71 49 D3;
+#X text 96 50 D4;
+#X connect 0 0 12 0;
 #X connect 0 0 5 0;
-#X connect 0 0 18 0;
-#X connect 1 0 6 0;
-#X connect 1 0 20 0;
-#X connect 2 0 7 0;
-#X connect 2 0 22 0;
-#X connect 3 0 8 0;
-#X connect 3 0 24 0;
-#X connect 13 0 18 0;
-#X connect 14 0 22 0;
+#X connect 1 0 14 0;
+#X connect 1 0 23 0;
+#X connect 2 0 16 0;
+#X connect 2 0 24 0;
+#X connect 3 0 18 0;
+#X connect 3 0 6 0;
+#X connect 7 0 12 0;
+#X connect 8 0 14 0;
+#X connect 9 0 16 0;
+#X connect 10 0 18 0;
+#X connect 11 0 19 0;
+#X connect 12 0 11 0;
+#X connect 13 0 21 0;
+#X connect 14 0 13 0;
 #X connect 15 0 20 0;
-#X connect 16 0 24 0;
-#X connect 17 0 9 0;
+#X connect 16 0 15 0;
+#X connect 17 0 22 0;
 #X connect 18 0 17 0;
-#X connect 19 0 10 0;
-#X connect 20 0 19 0;
-#X connect 21 0 11 0;
-#X connect 22 0 21 0;
-#X connect 23 0 12 0;
-#X connect 24 0 23 0;
-#X coords 0 -1 1 1 85 40 1 10 10;
+#X coords 0 -1 1 1 110 60 1 10 10;

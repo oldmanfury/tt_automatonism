@@ -1,35 +1,38 @@
-#N canvas 761 72 892 421 10;
-#X obj 137 216 outlet~;
-#X obj 372 225 outlet~;
-#X obj 604 230 outlet~;
-#X text 89 12 tact sw 0-2;
-#X obj 137 190 vline~;
-#X obj 136 103 moses 1;
-#X obj 27 105 moses 1000;
-#X obj 27 69 tedium_switch 23;
-#X obj 369 186 vline~;
-#X obj 368 99 moses 1;
-#X obj 259 101 moses 1000;
-#X obj 604 189 vline~;
-#X obj 603 102 moses 1;
-#X obj 494 104 moses 1000;
-#X obj 259 65 tedium_switch 25;
-#X obj 494 68 tedium_switch 24;
-#X msg 136 130 1 10 0;
-#X msg 182 151 0 10 0;
-#X msg 414 147 0 10 0;
-#X msg 368 126 1 10 0;
-#X msg 649 150 0 10 0;
-#X msg 603 129 1 10 0;
-#X obj 12 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -99865 -99865
+#N canvas 294 208 892 421 10;
+#X obj 147 326 outlet~;
+#X obj 382 335 outlet~;
+#X obj 614 340 outlet~;
+#X text 134 25 tact sw 0-2;
+#X obj 147 300 vline~;
+#X obj 146 213 moses 1;
+#X obj 37 215 moses 1000;
+#X obj 37 179 tedium_switch 23;
+#X obj 379 296 vline~;
+#X obj 378 209 moses 1;
+#X obj 269 211 moses 1000;
+#X obj 614 299 vline~;
+#X obj 613 212 moses 1;
+#X obj 504 214 moses 1000;
+#X obj 269 175 tedium_switch 25;
+#X obj 504 178 tedium_switch 24;
+#X msg 146 240 1 10 0;
+#X msg 192 261 0 10 0;
+#X msg 424 257 0 10 0;
+#X msg 378 236 1 10 0;
+#X msg 659 260 0 10 0;
+#X msg 613 239 1 10 0;
+#X obj 16 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -99865 -99865
 -1;
-#X obj 45 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -99865 -1
+#X obj 63 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -99865 -1
 -1;
-#X obj 79 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -4034 -1 -1
-;
-#X msg 16 145 1 10 \, 0 10 10;
-#X msg 263 151 1 10 \, 0 10 10;
-#X msg 500 153 1 10 \, 0 10 10;
+#X obj 107 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X msg 26 255 1 10 \, 0 10 10;
+#X msg 273 261 1 10 \, 0 10 10;
+#X msg 510 263 1 10 \, 0 10 10;
+#X text 10 56 SW-0;
+#X text 56 56 SW-1;
+#X text 98 50 SW-2 LED, f 4;
 #X connect 4 0 0 0;
 #X connect 5 0 16 0;
 #X connect 5 1 17 0;
@@ -57,4 +60,4 @@
 #X connect 25 0 4 0;
 #X connect 26 0 8 0;
 #X connect 27 0 11 0;
-#X coords 0 -1 1 1 85 40 1 10 10;
+#X coords 0 -1 1 1 120 75 1 10 10;
